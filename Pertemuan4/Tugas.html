@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website Sederhana</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color: #f2f2f2;
+    margin:0;
+}
+
+.header{
+    background-color:#331cb7;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.menu{
+    background-color:#331cb7;
+    text-align:center;
+    padding:10px;
+}
+
+.menu a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+}
+
+.container{
+    display:flex;
+    margin:20px;
+}
+
+.form{
+    background:white;
+    padding:20px;
+    width:70%;
+    border-radius:5px;
+}
+
+.sidebar{
+    background:#cfd8dc;
+    padding:20px;
+    width:30%;
+    margin-left:20px;
+    border-radius:5px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:8px;
+    margin:5px 0;
+}
+
+button{
+    background:#1976d2;
+    color:white;
+    padding:10px;
+    border:none;
+    width:100%;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+<h2>Selamat Datang di Website Sederhana</h2>
+</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Service</a>
+<a href="#">Contact</a>
+</div>
+
+<div class="container">
+
+<div class="form">
+
+<h3>Formulir Pendaftaran</h3>
+<p>Silahkan isi formulir di bawah ini untuk mendaftar.</p>
+
+<form>
+
+<label>Nama Lengkap:</label>
+<input type="text" name="nama">
+
+<label>Email:</label>
+<input type="email" name="email">
+
+<label>Password:</label>
+<input type="password" name="password">
+
+<label>Jenis Kelamin:</label><br>
+<input type="radio" name="gender"> Laki-laki <br>
+<input type="radio" name="gender"> Perempuan
+
+<br><br>
+
+<label>Hobi:</label><br>
+<input type="checkbox"> Musik <br>
+<input type="checkbox"> Olahraga <br>
+<input type="checkbox"> Membaca
+
+<br><br>
+
+<label>Pilih Kota:</label>
+<select>
+<option>Karawang</option>
+<option>Bandung</option>
+<option>Bekasi</option>
+<option>Subang</option>
+<option>Palembang</option>
+<option>Makassar</option>
+<option>Bali</option>
+</select>
+
+<label>Pesan Tambahan:</label>
+<textarea rows="4" placeholder="Tulis pesan di sini..."></textarea>
+
+<br><br>
+
+<button type="submit">Kirim</button>
+
+</form>
+
+</div>
+
+<div class="sidebar">
+<h3>Sidebar</h3>
+<p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.</p>
+</div>
+
+</div>
+
+</body>
+</html>
