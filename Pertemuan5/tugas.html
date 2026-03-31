@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cek Nilai Mahasiswa</title>
+</head>
+<body>
+
+    <h2>Cek Nilai Mahasiswa</h2>
+
+    <label>NIM:</label><br>
+    <input type="text" id="nim"><br><br>
+
+    <label>Nilai:</label><br>
+    <input type="number" id="nilai"><br><br>
+
+    <button onclick="cekNilai()">Cek Nilai</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        function cekNilai() {
+            let nim = document.getElementById("nim").value;
+            let nilai = document.getElementById("nilai").value;
+            let hasil = "";
+
+            nilai = parseInt(nilai);
+
+            // Validasi
+            if (nilai < 0 || nilai > 100 || isNaN(nilai)) {
+                hasil = "Nilai tidak valid!";
+            } else {
+                // Penentuan huruf mutu
+                if (nilai >= 85) {
+                    hasil = "Huruf Mutu: A";
+                } else if (nilai >= 70) {
+                    hasil = "Huruf Mutu: B";
+                } else if (nilai >= 60) {
+                    hasil = "Huruf Mutu: C";
+                } else if (nilai >= 50) {
+                    hasil = "Huruf Mutu: D";
+                } else {
+                    hasil = "Huruf Mutu: E";
+                }
+            }
+
+            // Tampilkan hasil
+            document.getElementById("hasil").innerHTML =
+                "NIM: " + nim + "<br>" + hasil;
+        }
+    </script>
+
+</body>
+</html>
